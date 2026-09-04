@@ -43,6 +43,18 @@ andy_chen
 
 Do not use spaces or hyphens. If two recruits have the same name, include a middle initial, such as `andy_j_chen`.
 
+## Install NumPy
+
+The MotorWrapper.py template requires the NumPy Python package.
+
+For Linux, WSL, or macOS, run:
+
+python3 -m pip install numpy
+
+For Windows without WSL, run:
+
+py -m pip install numpy
+
 ## Required Individual Projects
 
 Every recruit must complete both Python exercises.
@@ -119,7 +131,7 @@ Replace `group_group_name` with a short group name using lowercase letters and u
 Example:
 
 ```text
-group_team_poseidon
+group_team_bussy
 ```
 
 Other group members can access the branch using:
