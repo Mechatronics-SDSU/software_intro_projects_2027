@@ -112,8 +112,32 @@ class MotorWrapper:
         return motor_values # return motor values
     
 if __name__ == "__main__":
-    """
-    Your Code Here
-    Just run the file to test
     
-    """
+    sub = MotorWrapper()
+
+    speed = 1000
+    delay = 2
+
+    sub.move_forward(speed)
+    sub.send_command()
+    print("Moving forward")
+    time.sleep(delay)
+
+    sub.move_left(speed)
+    sub.send_command()
+    print("Moving left")
+    time.sleep(delay)
+
+    sub.move_backward(speed)
+    sub.send_command()
+    print("Moving backward")
+    time.sleep(delay)
+
+    sub.move_right(speed)
+    sub.send_command()
+    print("Moving right")
+    time.sleep(delay)
+
+    sub.stop()
+    sub.send_command()
+    print("Stopped")
