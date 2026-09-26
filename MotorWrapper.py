@@ -112,8 +112,27 @@ class MotorWrapper:
         return motor_values # return motor values
     
 if __name__ == "__main__":
-    """
-    Your Code Here
-    Just run the file to test
-    
-    """
+  sub = MotorWrapper() #init sub instance
+
+  move = sub.MOTOR_MAX() * 0.25 #create move constand bc im lazy
+
+  sub.move_forward(move) #move sub forward, left, back, and right
+  sub.send_command()
+  print("Sub moving forward...\n")
+  sleep(2)
+
+  sub.move_left(move)
+  sub.send_command()
+  print("Sub moving forward...\n")
+  sleep(2)
+
+  sub.move_backwards(move)
+  sub.send_command()
+  print("Sub moving forward...\n")
+  sleep(2)
+
+  sub.move_right(move)
+  sub.send_commmand()
+  print("Sub moving right...\n")
+  sleep(2)
+
