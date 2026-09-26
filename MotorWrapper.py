@@ -117,3 +117,30 @@ if __name__ == "__main__":
     Just run the file to test
     
     """
+    motor = MotorWrapper()
+
+    speed = 1000
+    delay = 2
+
+    motor.move_forward(speed)
+    motor.send_command()
+    print("Moving forward")
+    time.sleep(delay)
+
+    motor.move_left(speed)
+    motor.send_command()
+    print("Moving left")
+    time.sleep(delay)
+
+    motor.move_backward(speed)
+    motor.send_command()
+    print("Moving backward")
+    time.sleep(delay)
+
+    motor.move_right(speed)
+    motor.send_command()
+    print("Moving right")
+    time.sleep(delay)
+
+    motor.stop()
+    print("Stopped")
