@@ -112,8 +112,13 @@ class MotorWrapper:
         return motor_values # return motor values
     
 if __name__ == "__main__":
-    """
-    Your Code Here
-    Just run the file to test
-    
-    """
+    motor = MotorWrapper()
+    speed = 1000
+    functions = ["forward", "left", "backward", "right"]
+
+    for i in functions:
+        function = getattr(motor, "move_" + i)
+        function(speed)
+        motor.send_command()
+        time.sleep(1)
+
